@@ -1,0 +1,506 @@
+
+
+body {
+    background-image: url(../img/pixel.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+/* header ----------------------------------------------------*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo
+{
+    color :#112434;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.navegation
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navegation li
+{
+    list-style: none;
+}
+
+.navegation li a
+{
+    list-style: none;
+    padding: 6px 15px;
+    color: #112434;
+    border-radius: 20px;
+}
+
+.navegation li a:hover
+{
+    background: #112434;
+    color: #fff;
+}
+/* fin header ----------------------------------------------------------*/
+/*efecto houver ---------------------------------------------------------------*/
+.efecto{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    
+}
+
+.ale{
+    flex: 1;
+    overflow: hidden;
+    margin: 8px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.20);
+    line-height: 0;
+    transition: all 600ms;
+}
+
+.ale > img{
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: all 300ms;
+}
+
+.ale > span{
+    font-size: 35px;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+    color: rgb(114, 72, 135);
+}
+
+.ale:hover{
+    flex: 50%;
+}
+
+.ale:hover > img{
+    width: 100%;
+    height: 100%;
+}
+/* fin de efecto houver ---------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+.card {
+    background: #fff;
+    border: 4px;
+    box-shadow: 0px 14px 80px rgba(131, 135, 224, 0.5);
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    position: relative;
+}
+
+.card h2 {
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.card .title {
+    padding: 1rem;
+    text-align: right;
+    color: #2d7ef9;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.img-avatar{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 50%;
+    border: 6px solid white;
+    top: 15px;
+    left: 85px;
+}
+
+.img-avatar img {
+    border-radius: 50%;
+}
+
+.portada {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.card-text {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.title-total {
+    padding: 2.5em 1.5em 1.5em 1.5em;
+}
+
+path {
+    fill: white;
+}
+
+.img-portada {
+    width: 100%;
+}
+
+.card .desc {
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.card .actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: #2d7ef9;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    color: #0365f6;
+}
+/** Media Queries ----------------------------------------------------------------------------------**/
+.main .sobre-mi {
+    min-height: 100vh;
+    padding: 3rem 0;
+    color: #000000;
+    margin-bottom: 3rem;
+}
+.main .sobre-mi .contenedor-sobre-mi .texto {
+    padding: 1.5rem 0;
+    background: #101010;
+    color: red;
+    font-family: monospace, Arial;
+    width: 70%;
+    min-height: 27.5rem;
+    margin: 0 auto;
+    border-radius: 0.625rem;  }
+.main .sobre-mi .contenedor-sobre-mi .texto #pow-txt {
+    display: none;
+    color: #e3e3e3;
+    font-weight: 100;
+}
+.main .sobre-mi .contenedor-sobre-mi .texto .direccion {
+    margin-bottom: 1rem;
+}
+.main .sobre-mi .contenedor-sobre-mi .texto #pow-txt {
+    margin-bottom: 1rem;
+}
+.main .sobre-mi .contenedor-sobre-mi .texto .descripcion {
+    color: grey;
+    font-weight: 100;
+    line-height: 1.5;
+}
+.main .sobre-mi .contenedor-sobre-mi .texto p {
+    width: 90%;
+    margin: 0 auto;
+}
+.main .proyectos {
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+.main .proyectos .contenedor-proyectos {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+.main .proyectos .contenedor-proyectos .proyecto {
+    margin: auto;
+    width: 250px;
+    height: 350px;
+}
+.main .proyectos .contenedor-proyectos .proyecto .info {
+    padding: 1rem 0.5rem;
+    height: 10.625rem;
+    background: #ffffff;
+    color: #000000;
+    border: 0.125rem solid #969a97;
+}
+.main .proyectos .contenedor-proyectos .proyecto .info h4 {
+    text-align: left;
+    margin-bottom: 2.5rem;
+    font-size: 1.3rem;
+}
+.main .proyectos .contenedor-proyectos .proyecto .info h5 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+.main .proyectos .contenedor-proyectos .proyecto .info p {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.main .proyectos .contenedor-proyectos .proyecto .info p .html {
+    color: #854723;
+}
+.main .proyectos .contenedor-proyectos .proyecto .info p .css {
+    color: #0571BA;
+}
+.main .proyectos .contenedor-proyectos .proyecto .info p .javascript {
+    color: #958120;
+}
+.main .proyectos .contenedor-proyectos .proyecto .info p .bootstrap {
+color: #623F91;
+}
+.main .proyectos .contenedor-proyectos .proyecto .info p .sass {
+    color: #CC6699;
+}
+.main .proyectos .contenedor-proyectos .proyecto .info .foto img {
+    width: 100%;
+    height: 11.25rem;
+    vertical-align: top;
+}
+.main .conocimientos {
+    min-height: 100vh;
+    background: #ffffff;
+    color: #000000;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+.main .conocimientos .contenedor .contenedor-conocimientos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21.875rem, 1fr));
+    grid-row-gap: 2rem;
+}
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta {
+    margin: 4rem auto 0 auto;
+    position: relative;
+    width: 18.75rem;
+    height: 25rem;
+    background: #262626;
+    overflow: hidden;
+}
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta input,
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta .cambio {
+    position: absolute;
+    width: 3.125rem;
+    height: 3.125rem;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    outline: none;
+    z-index: 10;
+}
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta input {
+    opacity: 0;
+}
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta input:hover {
+    cursor: pointer;
+}
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta input:checked ~ .black {
+    box-shadow: 0 0 0 31.25rem #0d0d0d;
+    transform: rotate(-225deg);
+}
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta input:checked ~ .red {
+    box-shadow: 0 0 0 31.25rem #770000;
+    transform: rotate(225deg);
+}
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta .cambio {
+    pointer-events: none;
+    border-radius: 50%;
+    color: #000000;
+    background: #ffffff;
+    transition: 0.5s;
+    text-align: center;
+    line-height: 3.125rem;
+    font-size: 1.9375rem;
+    box-shadow: 0 0 0 0px #393939;
+}
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta .red {
+    box-shadow: 0 0 0 0px #cc4545;
+}
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta .img,
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta .detalles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta .detalles {
+    padding: 1.25rem;
+    box-sizing: border-box;
+    z-index: 11;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta input:checked ~ .detalles {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta .detalles h3 {
+    margin-bottom: 0.3125rem;
+    color: #ffffff;
+    text-align: center;
+}
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta .detalles p {
+    font-size: 0.9rem;
+    color: #ffffff;
+    line-height: 1.65;
+}
+.main .certificados {
+    min-height: 100vh;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+}
+.main .certificados .contenedor-certificados {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(21.875rem, 1fr));
+    grid-gap: 2rem;
+}
+.main .certificados .contenedor-certificados img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.main .certificados .contenedor-certificados img:hover {
+    transform: scale(1.1);
+}
+/*-----------------------------------------------------------------------------------*/
+
+/* footer -----------------------------------------------------------------*/
+
+.course .box-container {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    margin:  0 auto;
+    padding: 4rem 0;
+    flex-wrap: wrap;
+}
+
+.course .box-container .box {
+    background: #171717;
+    height: 15rem;
+    width: 15rem;
+    margin: 3.5rem 2rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.course .box-container .box i {
+    height: 5rem;
+    width: 5rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #ad3a7f;
+    background: none;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.course .box-container .box h3 {
+    font-size: 1.5rem;
+    color: #ffc246;
+}
+
+.course .box-container .box p {
+    font-size: 1rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+
+/* footer -----------------------------------------------------------------*/
+
+.footer {
+    text-align: center;
+}
+
+.footer .icons {
+    padding: 3rem 0;
+}
+
+.footer .icons a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.2rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffc246;
+    border: .2rem solid #ffc246;
+    font-size: 2rem;
+    margin: 0 .1rem;
+    transition: .2s linear;
+
+}
+
+.footer .icons a:hover {
+    color: #fff;
+    background: #f9580e;
+    border-color: #f9580e;
+}
+
+/* fin footer -----------------------------------------------------------------*/
+
+.pagina {
+    font-family: 'Silkscreen', cursive
+}
+
+.parrafo {
+    font-family: 'Silkscreen', cursive
+
+}
+
+p {
+    font-family: 'Fuzzy Bubbles', cursive;
+
+}
+
+.abc{
+    font-family: 'Silkscreen', cursive
+}
+li {
+    font-family: 'Fuzzy Bubbles', cursive;
+}
